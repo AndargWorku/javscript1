@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Car Deriver Exam</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+	<div class="container">
+		<div class="container-header">
+			<h1> 
+				<span>
+					<i class="fa fa-car" aria-hidden="true"></i>
+					Car 
+				</span> 
+				Deriver exam
+			</h1>
+		</div>
+
+		<div class="content" id="question_header">
+			<p>Wll come to Exam of Car deriver .please enter full information before start exam</p>
+
+			<ol>
+				<li>full name</li>
+				<li>gender</li>
+				<li>age</li>
+				<li>nationality</li>
+			</ol>
+
+		</div>
+
+		<button id="myBtn" class="btn">Enter information<i class="fas fa-arrow-right"></i></button>
+	</div>
+
+	<!-- modal -->
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2>Enter information</h2>
+			</div>
+
+			<div class="modal-body">
+				<form>
+					<div id="form_div">
+						<div id="form_left">
+							full name<br>
+							gender<br>
+							age<br>
+							nationality<br>
+						</div>
+
+						<div id="form_right">
+							<input type="text" id="name" placeholder="full Name ...">
+
+							<select id="gender">Sex
+								<option value=""></option>
+								<option value="male">male</option>
+								<option value="female">female</option>
+							</select>
+
+							
+							<div class="slide_container">
+								<input type="range" id="age" min="16" max="75" value="24" class="slider">
+								<span id="ageRange"></span>
+							</div>
+
+							<input type="text" id="nationality" placeholder="Nationality ...">
+						</div>
+
+						<button class="btn" onclick="sendStudentInfo(event)">Enter info</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="modal-footer">
+				<p>Wll come to Exam of Car deriver .please enter full information before start exam</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
